@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>用户登录</title>
+		<script src = "js/jquery-1.10.1.min.js"></script>
+		<link rel="stylesheet" href="css/login.css" />
+		<script>
+			window.onload = function(){
+				var oLogin = document.getElementById("login");
+				var oDiv = document.getElementById("div1");
+				var aInputs = oDiv.getElementsByTagName("input");
+				oLogin.onclick = function(){
+					$.ajax({
+						type: "post",
+						url: "http://datainfo.duapp.com/shopdata/userinfo.php",
+						data: `status=login&userID=${aInputs[0].value}&password=${aInputs[1].value}`,
+						success: function(data){
+							if(data == 0){
+								alert("用户名不存在！");
+							}else if(data == 2){
+								alert("用户名密码不符！");
+							}else{
+								alert("登录成功！");
+							}
+						},
+						error: function(e){
+							alert(e);
+						}
+					})
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="topbar">
+			<div class="wraper topbar">
+				<div class="fr topnav">
+					<span class="userpanel fl mr10">
+						<span class="welcome ml10">
+							欢迎来新蛋购物！
+						</span>
+					</span>
+					<ul class="aside fr" style="*float:left;">
+						<li>
+							<a href="#">帮助中心</a>
+						</li>
+						<li class="hasub service">
+							<a href="#" class="oper">客服服务</a>
+							<s></s>
+							<div id="box">
+								<span style="color:orange">400-820-4400</span>
+								<span style="color:black">021-67072699</span>
+								<span>每天 9:00-18:00</span>
+								<span class="span1"><a href="#">在线咨询</a></span>
+								<span class="span1"><a href="#">邮件我们</a></span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<ul class="aside">
+					<li>
+						<a href="#" target="_blank" class="phone">掌上新蛋</a>
+					</li>
+					<li>
+						<a href="#" target="_blank" class="biz">企业客户</a>
+					</li>
+					<li>
+						<a href="#" target="_blank" class="join">入驻开放平台</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="top">
+			<div class="wrapper">
+				<a href="index.html" class="ie6png"></a>
+				<div class="head_title">欢迎登录</div>
+			</div>
+		</div>
+		<div style="background: #E3E3E3; padding: 44px 0px">
+			<div class="wrapper logoin_center">
+				<div class="logoin_l">
+					<div>
+						<a href="http://www.newegg.cn/P/wkqe.htm?icid=22176" target="_blank" title="海淘">
+							<img src="https://s.neweggimages.com.cn/NeweggPic2/Marketing/201511/upload/1123/478x362.jpg" width="478" class="ie6png" height="362" alt="海淘">
+						</a>
+					</div>
+				</div>
+				<div class="logoin_r">
+					<div>
+						<div class="logoin_r_c1">
+							<div class="logoin_title">
+								<h2>登录新蛋</h2>
+								<div class="fr">
+									<a href="register.html">
+										注册新用户
+										<span class="fts">>></span>
+									</a>
+								</div>
+							</div>
+							<div id="div1">
+								<div class="username oli">
+									<span class="username_icon"></span>
+									<input type="text" name="name" maxlength="50" class="hasDefaultText" id="name" placeholder="用户名">
+								</div>
+								<div class="password oli">
+									<span class="password_icon"></span>
+									<input type="password" name="pwd" id="pwd" maxlength="50">
+								</div>
+							</div>
+							<div class="logoin_oper">
+								<a href="http://www.newegg.cn/Service/HelpCenter.aspx?sysno=54" class="fl" target="_blank">账户安全</a>
+								<a href="https://secure.newegg.cn/Customer/GetPassword.aspx" class="fr">忘记密码？</a>
+							</div>
+							<button class="logoin_oper egg_btns_t2" id="login">
+								立即登录
+							</button>
+						</div>
+					</div>
+					<div class="logoin_r_c2">
+						<dl class="otherlogin">
+							<dt>您还可以使用以下合作伙伴的账户登录新蛋网：</dt>
+							<dd class="AliPayLogon">
+								<a href="https://secure.newegg.cn/Customer/Passport/AliPay/Logon.aspx" title="支付宝">支付宝</a>
+							</dd>
+							<dd class="TencentQQLogon">
+								<a href="https://secure.newegg.cn/Customer/Passport/TencentQQ/Logon.aspx" title="QQ">QQ</a>
+							</dd>
+							<dd class="WeiXinLogon">
+								<a href="#" title="微信">微信</a>
+							</dd>
+							<dd class="SinaLogon">
+								<a href="https://secure.newegg.cn/Customer/Passport/Sina/Logon.aspx" title="新浪微博">新浪微博</a>
+							</dd>
+							<dd class="CmpayLogon">
+								<a href="https://secure.newegg.cn/Customer/Passport/Cmpay/Logon.aspx" title="手机支付">手机支付</a>
+							</dd>
+							<dd class="SDOLogon">
+								<a href="https://secure.newegg.cn/Customer/Passport/SDO/Logon.aspx" title="盛大登录">盛大登录</a>
+							</dd>
+							<dd class="ThunderLogon">
+								<a href="https://secure.newegg.cn/Customer/Passport/Thunder/Logon.aspx" title="迅雷">迅雷</a>
+							</dd>
+							<dd class="PuTianLogon">
+								<a href="https://secure.newegg.cn/Customer/Passport/PuTian/Logon.aspx" title="莆田政府采购登录">莆田政府采购登录</a>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="wraper">
+				<div class="footer">
+					<a href="https://secure.newegg.cn/Geotrust.aspx" ref="noBlank" target="_blank" class="item3" title="E9WEB02"></a>
+					<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010602000303" ref="noBlank" target="_blank" class="item7" title="网站备案信息" style="position:relative;">
+						<span style="position: absolute;font-size:12px;text-indent:0px;line-height: normal;bottom: 4px;left: 41px;color: #001b75;font-family: serif;">31010602000303</span>
+					</a>
+					<a href="http://sh.cyberpolice.cn/" ref="noBlank" target="_blank" class="item8" title="110网监"></a>
+					<a href="http://www.zx110.org/" ref="noBlank" target="_blank" class="item9" title="网络社会征信网"></a>
+					<p>
+						新蛋集团网站：
+						<a href="http://www.newegg.com/ " class="ml5" target="_blank" style="color:#484848">美国新蛋</a>
+						<a href="http://www.newegg.cn " class="ml10" target="_blank" style="color:#484848">中国新蛋</a>
+						<a href="http://www.newegg.ca/ " class="ml10" target="_blank" style="color:#484848">加拿大新蛋</a>
+						<a href="http://www.neweggsoft.com/ " class="ml10" target="_blank" style="color:#484848">新蛋软件</a>
+					</p>
+					<img src="https://s.neweggimages.com.cn/WebResources/2009/Default/Nest/GomezE9WEB02.gif" height="1px" width="1px" visible="false">
+					<p>
+						<span>© 2001-2018</span>
+						<span>新蛋商贸（上海）有限公司</span>
+						<span>版权所有</span>
+						<span>
+							<a href="http://www.miibeian.gov.cn/" title="上海市互联网准入证书" target="_blank" ref="noBlank" style="color:#484848">沪ICP备:16033615</a>
+						</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+div {
+  text-align: left;
+  display: block; }
+
+body {
+  margin: 0 auto;
+  text-align: center;
+  font-family: tahoma, \5b8b\4f53 !important;
+  font-size: 12px;
+  height: 1.5;
+  color: #484848;
+  cursor: default; }
+
+#topbar {
+  line-height: 24px;
+  height: 24px;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #e2e2e2;
+  position: relative;
+  z-index: 8003; }
+
+.wraper {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.fr {
+  float: right;
+  display: inline; }
+
+.fl {
+  float: left;
+  display: inline; }
+
+.mr10 {
+  margin-right: 10px; }
+
+.topnav {
+  position: relative;
+  font-family: tahoma,\5b8b\4f53; }
+
+.welcome {
+  display: inline-block; }
+
+.ml10 {
+  margin-left: 10px; }
+
+ul {
+  list-style-type: none; }
+
+form, ul, ol, dl, dd, p {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style-type: none; }
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent; }
+
+#topbar .aside a {
+  display: inline-block;
+  _padding-top: 0; }
+
+a:hover {
+  text-decoration: underline; }
+
+a {
+  color: #666;
+  text-decoration: none; }
+
+#topbar .aside .hasub {
+  padding: 0;
+  height: 24px;
+  margin-left: -1px;
+  position: relative; }
+
+#box {
+  position: absolute;
+  text-align: center;
+  left: -59px;
+  display: none;
+  border-top: none;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  width: 143px;
+  background-color: #FFF;
+  line-height: 16px; }
+
+#box .span1 {
+  background: blue;
+  padding: 5px 2px;
+  margin-bottom: 10px; }
+
+#box .span1 a {
+  display: block;
+  color: #FFF; }
+
+#box span {
+  display: inline-block;
+  font-size: 14px;
+  margin: 3px 1px; }
+
+#topbar .aside .hasub:hover {
+  background-color: #FFF; }
+
+#topbar .aside .hasub:hover div {
+  display: block; }
+
+#topbar .aside li {
+  float: left;
+  padding: 0 5px; }
+
+#topbar .aside .last, .hasub s, #menu .nav a, .icon_new {
+  background: url(http://c6.neweggimages.com.cn/WebResources/2009/Default/Nest/img_v3/sprite_v140425.png) no-repeat; }
+
+#topbar .hasub s {
+  position: absolute;
+  right: 12px;
+  top: 11px; }
+
+.hasub s {
+  display: inline-block;
+  width: 6px;
+  height: 4px;
+  background-position: left -27px !important;
+  overflow: hidden; }
+
+.hasub .oper {
+  padding: 0 25px 0 11px;
+  position: relative;
+  z-index: 1; }
+
+#topbar .aside li {
+  float: left;
+  padding: 0 5px; }
+
+#topbar .aside a.phone {
+  background-position: 0 7px !important; }
+
+#topbar .aside a.phone, #topbar .aside a.biz, #topbar .aside a.join, #topbar .aside a.bizGroupBuy {
+  padding-left: 16px;
+  background: url(https://s.neweggimages.com.cn/WebResources/2009/Default/Nest/img_v3/topbar_sprite150428.png) 0 0 no-repeat; }
+
+#topbar .aside a.biz {
+  background-position: 0 -37px; }
+
+#topbar .aside a.join {
+  background-position: 0 -85px; }
+
+.top {
+  overflow: hidden;
+  zoom: 1; }
+
+.top .wrapper {
+  margin-bottom: 18px;
+  padding-top: 20px; }
+
+.wrapper {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 980px;
+  zoom: 1; }
+
+.top a {
+  background: url("https://s.neweggimages.com.cn/WebResources/2009/Default/Nest/img_v3/logocn_1213.png") no-repeat scroll 0 0;
+  float: left;
+  height: 69px;
+  text-indent: -3000px;
+  width: 320px; }
+
+.head_title {
+  border-left: 1px solid #D9D9D9;
+  float: left;
+  font: 24px/49px microsoft yahei;
+  margin: 5px 0 0 25px;
+  padding-left: 26px; }
+
+.register_box {
+  height: 491px;
+  background: #F9F9F9;
+  overflow: hidden; }
+
+.clearfix {
+  zoom: 1; }
+
+.friend_link {
+  height: 30px;
+  line-height: 30px; }
+
+.clearfix:before, .clearfix:after {
+  display: table;
+  line-height: 0;
+  content: ""; }
+
+.red {
+  color: #fe0000; }
+
+.step0 {
+  margin: 20px auto;
+  background: url("https://s.neweggimages.com.cn/WebResources/2009/Default/Nest/icon/register_step.png") no-repeat center;
+  width: 655px;
+  height: 30px;
+  background-position: 0 0; }
+
+.register_con {
+  position: relative;
+  text-align: center;
+  margin-top: 40px; }
+
+.register_con_box {
+  text-align: center;
+  position: relative;
+  margin-bottom: 25px; }
+
+.reg_txt_0 {
+  height: 30px;
+  width: 255px;
+  line-height: 30px;
+  border: 1px solid #cfcfcf;
+  text-indent: 5px;
+  overflow: hidden;
+  background: #F9F9F9; }
+
+button, input {
+  line-height: normal; }
+
+button, input, select, textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle; }
+
+button, input, select, textarea {
+  font-size: 1em;
+  margin: 0;
+  font-family: tahoma,arial;
+  color: #484848; }
+
+.register_con_box em {
+  top: 8px;
+  text-align: left;
+  width: 360px;
+  height: 20px;
+  line-height: 13px; }
+
+.input_usrname_wrong {
+  background-position: 0 -39px;
+  color: #F60; }
+
+.input_tips {
+  display: inline-block;
+  font-style: normal;
+  padding-left: 17px;
+  vertical-align: middle;
+  width: 360px;
+  position: absolute; }
+
+.input_usrname_right {
+  background-position: 0 -19px; }
+
+.register_con label {
+  display: inline-block;
+  width: 66px;
+  text-align: left;
+  cursor: default; }
+
+.reg_txt_1 {
+  height: 30px;
+  width: 130px;
+  line-height: 30px;
+  border: 1px solid #cfcfcf;
+  text-indent: 5px;
+  overflow: hidden;
+  background: #F9F9F9;
+  vertical-align: middle;
+  margin-right: 5px;
+  text-align: center; }
+
+.code {
+  display: inline-block;
+  height: 32px;
+  width: 115px;
+  vertical-align: middle; }
+
+#Btn {
+  border: 0; }
+
+.code img {
+  display: block;
+  height: 32px;
+  width: 115px; }
+
+img {
+  border: medium none; }
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0; }
+
+.change_code {
+  position: absolute;
+  top: 8px; }
+
+#tipCodeForEmail {
+  width: 110px; }
+
+.register_con_box .change_code em {
+  top: 1px;
+  text-align: left;
+  width: 360px;
+  height: 20px;
+  line-height: 13px; }
+
+.code_btn_0 {
+  cursor: pointer;
+  margin-top: 10px;
+  width: 280px;
+  background-color: #f7661f;
+  border: 1px solid #f7661f;
+  padding: 0 19px;
+  font-weight: bolder;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 2px;
+  color: #FFF; }
+
+#footer {
+  margin-top: 55px;
+  background: #FFF;
+  border-top: 1px solid #FFF; }
+
+#footer .wraper, .footer {
+  text-align: center; }
+
+.footer {
+  padding: 30px 0 10px;
+  font-size: 0; }
+
+.footer .item3 {
+  background-position: left -92px !important;
+  width: 116px; }
+
+.footer .item1, .footer .item2, .footer .item3, .footer .item4, .footer .item5, .footer .item6, .footer .item7, .footer .item8, .footer .item9, .footer .item10 {
+  display: inline-block;
+  background: url(https://s.neweggimages.com.cn/WebResources/2009/Default/Nest/img_v3/certi20150925.png) no-repeat;
+  height: 45px;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  text-indent: -20000px;
+  margin: 0 3px 10px 2px; }
+
+.footer .item7 {
+  background-position: left -276px;
+  width: 130px; }
+
+.footer span {
+  margin: 0 2px; }
+
+.footer .item8 {
+  background-position: left -326px;
+  width: 127px; }
+
+.footer .item9 {
+  background-position: left -376px;
+  width: 106px; }
+
+.footer p {
+  font-size: 12px;
+  padding: 0 0 10px; }
+
+.ml5 {
+  margin-left: 5px; }
+
+.ml10 {
+  margin-left: 10px; }
+
+.footer p span {
+  font-family: Tahoma; }
+
+.footer span {
+  margin: 0 2px; }

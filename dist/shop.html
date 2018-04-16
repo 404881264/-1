@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情页</title>
+		<link rel="stylesheet" href="css/shop.css">
+		<script src = "js/require.js" defer async="true" data-main = "js/main"></script>
+		<script>
+			window.onload=function(){
+
+				var oS_box=document.getElementById('s_box');
+				var oS_position=oS_box.children[2];
+				var oS_mark=oS_box.children[0];
+				var oB_box=document.getElementById('b_box');
+				var oB_box_all=document.getElementById('b_box_all');
+				var oimg_1 = document.getElementById("img_1");
+				var oimg_2 = document.getElementById("img_2");
+				var oimg_3 = document.getElementById("img_3");
+				var simg = oS_box.getElementsByTagName("img")[0];
+				var bimg = oB_box.getElementsByTagName("img")[0];
+				var oa_1 = document.getElementById("a_1");
+				var oa_2 = document.getElementById("a_2");
+				var oinput_1 = document.getElementById("input_1");
+				oa_1.onclick=function(){
+					if(oinput_1.value > 1){
+						oinput_1.value --;
+					}
+				}
+				oa_2.onclick=function(){
+					
+						oinput_1.value ++;
+					
+				}
+				oimg_1.onmouseover=function(){
+					 simg.src="http://c4.neweggimages.com.cn/neweggpic2/neg/P640/A1I-184-02Y.jpg";
+					 bimg.src="http://c4.neweggimages.com.cn/neweggpic2/neg/P640/A1I-184-02Y.jpg";
+				}
+				oimg_2.onmouseover=function(){
+					 simg.src="http://c3.neweggimages.com.cn/neweggpic2/neg/P640/A1I-184-02Y_02.jpg";
+					 bimg.src="http://c3.neweggimages.com.cn/neweggpic2/neg/P640/A1I-184-02Y_02.jpg";
+				}
+				oimg_3.onmouseover=function(){
+					 simg.src="http://c4.neweggimages.com.cn/neweggpic2/neg/P640/A1I-184-02Y_03.jpg";
+					 bimg.src="http://c4.neweggimages.com.cn/neweggpic2/neg/P640/A1I-184-02Y_03.jpg";
+				}
+				oS_mark.onmouseover=function(){
+					oS_position.style.display='block';
+					oB_box.style.display='block';
+
+				}
+				oS_mark.onmouseout=function(){
+					oS_position.style.display='none';
+					oB_box.style.display='none';
+				}
+
+				oS_mark.onmousemove=function(event){
+					var evt=event||window.event;
+
+					var left=evt.offsetX-oS_position.offsetWidth/2;
+					//console.log(left)
+					
+					if(left<0){
+						left=0;
+					}else if(left>oS_box.offsetWidth-oS_position.offsetWidth){
+						left=oS_box.offsetWidth-oS_position.offsetWidth
+					}
+					//console.log(left)
+					oS_position.style.left=left+'px';
+
+
+					var top=evt.offsetY-oS_position.offsetHeight/2;
+					if(top<0){
+						top=0;
+					}else if(top>oS_box.offsetHeight-oS_position.offsetHeight){
+						top=oS_box.offsetHeight-oS_position.offsetHeight
+					}
+					//console.log(top)
+					oS_position.style.top=top+'px';
+
+					//移动的比例  把X值和Y值换算成比例;
+
+					var proportionX=left/(oS_box.offsetWidth-oS_position.offsetWidth);
+					var proportionY=top/(oS_box.offsetHeight-oS_position.offsetHeight);
+
+
+					//利用比例去算出大小不同的元素的偏移距离；
+
+					oB_box_all.style.left=-proportionX*(oB_box_all.offsetWidth-oB_box.offsetWidth)+'px';
+
+					oB_box_all.style.top=-proportionY*(oB_box_all.offsetHeight-oB_box.offsetHeight)+'px';
+				}
+			}
+		</script>
+	</head>
+	<body class="sw">
+		<div id="topbar">
+			<div class="wraper topbar">
+				<div class="fr topnav">
+					<span class="userpanel fl mr10">
+						<a href="register.html">注册</a>
+						<b>|</b>
+						<a href="Login.html">登录</a>
+						<span class="welcome ml10">
+							下午好,欢迎来新蛋购物！
+						</span>
+					</span>
+					<ul class="aside fr" style="*float:left;">
+						<li>
+							<a href="#">我的订单</a>
+						</li>
+						<li class="hasub">
+							<a href="#" class="oper">我的新蛋</a>
+							<s></s>
+							<div id="box1">
+								请<a href="Login.html">登录</a>后查看
+							</div>
+						</li>
+						<li>
+							<a href="#">帮助中心</a>
+						</li>
+						<li class="hasub service">
+							<a href="#" class="oper">客户服务</a>
+							<s></s>
+							<div id="box">
+								<span style="color:orange">400-820-4400</span>
+								<span style="color:black">021-67072699</span>
+								<span>每天 9:00-18:00</span>
+								<span class="span1"><a href="#">在线咨询</a></span>
+								<span class="span1"><a href="#">邮件我们</a></span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<ul class="aside">
+					<li>
+						<a href="http://app.newegg.cn" target="_blank" class="phone">掌上新蛋</a>
+					</li>
+					<li>
+						<a href="http://www.newegg.cn/Service/HelpCenter.aspx?sysno=30" target="_blank" class="bizGroupBuy">企业团购</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="header" class="wraper">
+			<div class="wraper header">
+				<a href="index.html" id="logo" ref="noBlank" title="新蛋中国 - 全球领先的IT/数码网上购物商城-笔记本,电脑配件,数码相机,手机,办公设备,家电,百货" class="inblock logo ie6png">新蛋商城</a>
+			</div>
+			<div class="searchbar ie6png">
+				<div class="searchinput ie6png">
+					<input type="text" placeholder="请输入您要搜索的关键字" name="keyword" id="topSearch" maxlength="50" class="keyword hasDefaultText">
+				</div>
+				<button class="btn_search ie6png inblock">搜索</button>
+				<p class="hot">
+					<a href="#">Bose</a>
+					<b>|</b>
+					<a href="#">iPhoneX</a>
+					<b>|</b>
+					<a href="#">mate10</a>
+					<b>|</b>
+					<a href="#">Thinkpad</a>
+					<b>|</b>
+					<a href="#">索尼电视机</a>
+				</p>
+			</div>
+		</div>
+		<div id="menu" class="menu_index">
+			<div class="wraper">
+				<ul class="nav">
+					<li><a href="index.html" title="首页">首页</a></li>
+					<li><a href="#" title="限时抢购">限时抢购</a></li>
+					<li><a href="#" title="团团赚">团团赚</a></li>
+					<li><a href="#" title="海外直购">海外直购</a></li>
+					<li><a href="#" title="智能硬件">智能硬件</a></li>
+					<li><a href="#" title="爱车配">爱车配</a></li>
+					<li><a href="#" title="二手宝库">二手宝库</a></li>
+				</ul>
+				<div class="menu" id="innermenu">
+					<h3 class="ie6png">
+						<a href="#" title="全部商品分类">全部商品分类</a>
+					</h3>
+					<div class="menulist" id="navigationPanel">
+						<ul class="menunavi cls">
+							<li class="item">
+								<dl>
+									<dt>
+										<div class="drop_links">
+											<div class="banner_icon banner_icon_0"></div>
+											<h4>
+												<a href="#">海外直购</a>&nbsp;
+											</h4>
+											<div class="se_links" style="height:18px;overflow: hidden;">
+												<a href="#" class="clf60">影音</a>&nbsp;
+												<a href="#" class="clf60">固态硬盘</a>&nbsp;
+												<a href="#">奶粉</a>&nbsp;
+											</div>
+										</div>
+									</dt>
+									<dd style="top: -8px;">
+										<div class="ddwrap" style="left: 0px;">
+											<table cellpadding="0" cellspacing="0" class="ddwrap_brand_table">
+												<tbody class="tbody_1">
+													
+												</tbody>
+											</table>
+										</div>
+									</dd>
+								</dl>
+							</li>
+							<li class="item">
+								<dl>
+									<dt>
+										<div class="drop_links">
+											<div class="banner_icon banner_icon_1"></div>
+											<h4>
+												<a href="#">手机</a>&nbsp;
+												<a href="#">摄影</a>&nbsp;
+												<a href="#">苹果</a>&nbsp;
+											</h4>
+											<div class="se_links" style="height:18px;overflow: hidden;">
+												<a href="#" class="clf60">智能手机</a>&nbsp;
+												<a href="#">微单</a>&nbsp;
+												<a href="#" class="clf60">数码包</a>&nbsp;
+											</div>
+										</div>
+									</dt>
+									<dd style="top: -81px;">
+										<div class="ddwrap" style="left: 0px;">
+											<table cellpadding="0" cellspacing="0" class="ddwrap_brand_table">
+												<tbody class="tbody_2">
+													
+												</tbody>
+											</table>
+										</div>
+									</dd>
+								</dl>
+							</li>
+							<li class="item">
+								<dl>
+									<dt>
+										<div class="drop_links">
+											<div class="banner_icon banner_icon_2"></div>
+											<h4>
+												<a href="#">电脑</a>&nbsp;
+												<a href="#">外设</a>&nbsp;
+												<a href="#">办公</a>&nbsp;
+											</h4>
+											<div class="se_links" style="height:18px;overflow: hidden;">
+												<a href="#" class="clf60">笔记本</a>&nbsp;
+												<a href="#" class="clf60">智能硬件</a>&nbsp;
+												<a href="#">硬盘</a>&nbsp;
+											</div>
+										</div>
+									</dt>
+									<dd style="top: -154px;">
+										<div class="ddwrap" style="left: 0px;">
+											<table cellpadding="0" cellspacing="0" class="ddwrap_brand_table">
+												<tbody class="tbody_3">
+													
+												</tbody>
+											</table>
+										</div>
+									</dd>
+								</dl>
+							</li>
+							<li class="item">
+								<dl>
+									<dt>
+										<div class="drop_links">
+											<div class="banner_icon banner_icon_3"></div>
+											<h4>
+												<a href="#">家用电器</a>&nbsp;
+											</h4>
+											<div class="se_links" style="height:18px;overflow: hidden;">
+												<a href="#">电饭煲</a>&nbsp;
+												<a href="#" class="clf60">电视</a>&nbsp;
+												<a href="#">净水器</a>&nbsp;
+											</div>
+										</div>
+									</dt>
+									<dd style="top: -227px;">
+										<div class="ddwrap" style="left: 0px;">
+											<table cellpadding="0" cellspacing="0" class="ddwrap_brand_table">
+												<tbody class="tbody_4">
+													
+												</tbody>
+											</table>
+										</div>
+									</dd>
+								</dl>
+							</li>
+							<li class="item last">
+								<dl>
+									<dt>
+										<div class="drop_links">
+											<div class="banner_icon banner_icon_4"></div>
+											<h4 id="last_li_h4">
+												生活百货&nbsp;
+											</h4>
+											<div class="se_links">
+												<ul class="se_links_ul">
+													<li>
+														<div class="se_links_a">
+															<a href="#" class="clf60">汽车用品</a>&nbsp;
+															<a href="#">个户清洁</a>&nbsp;
+														</div>
+														<div class="childmenu" style="top:-347px"></div>
+													</li>
+													<li>
+														<div class="se_links_a">
+															<a href="#">家居</a>&nbsp;
+															<a href="#">厨用</a>&nbsp;
+															<a href="#">钟表</a>&nbsp;
+															<a href="#">礼品</a>&nbsp;
+														</div>
+														<div class="childmenu" style="top:-374px"></div>
+													</li>
+													<li>
+														<div class="se_links_a">
+															<a href="#">服饰</a>&nbsp;
+															<a href="#">女装</a>&nbsp;
+															<a href="#">内衣</a>&nbsp;
+															<a href="#">珠宝</a>&nbsp;
+														</div>
+														<div class="childmenu" style="top:-401px"></div>
+													</li>
+													<li>
+														<div class="se_links_a">
+															<a href="#">母婴</a>&nbsp;
+															<a href="#">玩具</a>&nbsp;
+															<a href="#">食品</a>&nbsp;
+															<a href="#">酒饮</a>&nbsp;
+														</div>
+														<div class="childmenu" style="top:-428px"></div>
+													</li>
+													<li>
+														<div class="se_links_a">
+															<a href="#">鞋靴</a>&nbsp;
+															<a href="#">箱包</a>&nbsp;
+															<a href="#">运动</a>&nbsp;
+															<a href="#">户外</a>&nbsp;
+														</div>
+														<div class="childmenu" style="top:-455px"></div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</dt>
+									<dd class="dd_top">
+										<div class="ddwrap" style="left: 0px;">
+											<table cellpadding="0" cellspacing="0" class="ddwrap_brand_table">
+												<tbody class="tbody_5">
+													
+												</tbody>
+											</table>
+										</div>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="utility">
+					<dl class="mycart">
+						<dt class="opener" id="tit_cart">
+							<a href="shopcart.html" id="gotoShoppingcart_a">
+								购物车
+								<strong id="headerCartCount">0</strong>
+								件
+								<s></s>
+							</a>
+						</dt>
+						<dd class="openerC" id="cartContainer">
+							<div class="inner" style="width:226px;">
+								<div class="empty">
+									<s class="inblock mr5"></s>
+									您还没有购买商品，快去挑选吧！
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl class="favor">
+						<dt class="opener" id="tit_favor">
+							<a href="javascript:void(0)" id="gotoShoppingcart_a">
+								收藏提醒
+								<s></s>
+							</a>
+						</dt>
+						<dd class="openerC" id="favorContainer">
+							<div class="inner" style="width:226px;">
+								<div class="empty">
+									请登录后查看
+									<a href="Login.html" class="egg_btns_t1 egg_btns_org ml10">登录</a>
+								</div>
+							</div>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<div id="wrap">
+			<div class="wraper">
+				<div id="body">
+					<div id="tab1" class="tabContent">
+						<div class="goods_all">
+							<div class="goods_prev">
+								<dl id="productImgList">
+									<dt>
+										<div class="picZoom" id="s_box">
+											<div class="mark_box"></div>
+											<img src="http://c3.neweggimages.com.cn/neweggpic2/neg/P640/A1I-184-02Y_02.jpg" class="loading1 zoomSmall" alt="">
+											<div class='position_box'></div>
+										</div>
+										<div id="b_box">		
+											<div id="b_box_all">
+												<img src="http://c3.neweggimages.com.cn/neweggpic2/neg/P640/A1I-184-02Y_02.jpg" class="loading1 zoomSmall" alt="">
+											</div>		
+										</div>
+									</dt>
+									<dd>
+										<div class="goods_prev_cnt">
+											<ul class="goods_prev_list moveable">
+												<li>
+													<a href="javascript:void(0)" id="img_1">
+														<img src="http://c4.neweggimages.com.cn/neweggpic2/neg/P80/A1I-184-02Y.jpg">
+													</a>
+												</li>
+												<li class="cur">
+													<a href="javascript:void(0)" id="img_2">
+														<img src="http://c3.neweggimages.com.cn/neweggpic2/neg/P640/A1I-184-02Y_02.jpg" width="80" height="60">
+													</a>
+												</li>
+												<li>
+													<a href="javascript:void(0)" id="img_3">
+														<img src="http://c4.neweggimages.com.cn/neweggpic2/neg/P80/A1I-184-02Y_03.jpg" width="80" height="60">
+													</a>
+												</li>
+											</ul>
+										</div>
+									</dd>
+								</dl>
+							</div>
+							<div class="goods_intro">
+								<div class="goods_title" id="productTitle">
+									<h1>Apple MacBook Air 13.3英寸笔记本电脑 银色(Core i5 处理器/8GB内存/128GB闪存 MQD32CH/A)</h1>
+								</div>
+								<div class="goods_info">
+									<ul>
+										<li>
+											<div class="goods_info_name">品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;牌：</div>
+											<div class="godds_info_data">Apple 苹果</div>
+										</li>
+										<li>
+											<div class="goods_info_name">产品型号：</div>
+											<div class="godds_info_data">MQD32CH</div>
+										</li>
+										<li class="goods_price_now">
+											<div class="goods_info_name">新&nbsp;&nbsp;蛋&nbsp;&nbsp;价：</div>
+											<div class="godds_info_data">
+												<span id="priceValue">
+													<span class="clf76">
+														<em>￥&nbsp;</em>
+														<strong class="fs30">
+															<img src="http://www.newegg.cn/Common/PriceImage.aspx?PId=Zs3rsxsLgNA%3d&newstyle=true" alt="">
+														</strong>
+													</span>
+												</span>
+											</div>
+										</li>
+										<li class="goods_info_choose goods_info_support">
+											<div class="goods_info_name">商品支持：</div>
+											<div class="godds_info_data">
+												<a href="javascript:void(0)" class="goods_info_promise_logo promise_seven_day_off" title="不支持7天无理由退换货">不支持无理由退</a>
+											</div>
+										</li>
+										<li class="goods_info_choose productProperty">
+											<div class="goods_info_name lh29">
+												C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PU：
+											</div>
+											<div class="godds_info_data cl000 ">
+												<a href="javascript:void(0)" class="common_choose pr10  common_choose_cur">2017年i5处理器升级版</a>
+											</div>
+										</li>
+										<li class="goods_info_choose productProperty">
+											<div class="goods_info_name lh29">
+												配&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;置：
+											</div>
+											<div class="godds_info_data cl000 ">
+												<a href="javascript:void(0)" class="common_choose pr10  common_choose_cur">8GB内存/128GB SSD</a>
+											</div>
+										</li>
+										<li class="goods_info_cnts" id="buyQty">
+											<div class="goods_info_name">
+												数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：
+											</div>
+											<div class="godds_info_data posr">
+												<a href="javascript:void(0)" class="plus_minus minus" id="a_1">-</a>
+												<input type="text" class="num" value="1" maxlength="3" autocomplete="off" id="input_1">
+												<a href="javascript:void(0)" class="plus_minus plus" id="a_2">+</a>
+											</div>
+										</li>
+										<li class="goods_info_answer">
+											<div class="goods_info_name"></div>
+											<div class="godds_info_data">
+												已选择 “
+												<strong>2017年i5处理器升级版、8GB内存/128GB SSD</strong>
+												”
+											</div>
+										</li>
+									</ul>
+									<div class="goods_buy_btns " id="operations">
+										<a href="javascript:void(0)" id="quickBuy" class="pro_common_add_btn pro_common_org  btn_mrg">立即购买</a>
+										<a href="shopcart.html" id="addToCart" class="pro_common_add_btn pro_common_addShoppingCart ie6png"> 加入购物车</a>
+										<div class="goods_buy_otherbtns">
+											<a href="#" class="gray_btn" id="addToWishList">加入收藏夹</a>
+											<div class="gray_btn fav likeButton likePoint">
+												<div class="fav_num_wrap">
+													<p>7</p>
+												</div>
+											</div>
+											<div class="share_icon">
+												<a href="javascript:void(0)" class="reviews_share sshare_xl" title="分享到新浪微博"></a>
+												<a href="javascript:void(0)" class="reviews_share sshare_tx" title="分享到腾讯微博"></a>
+												<a href="javascript:void(0)" class="reviews_share sshare_db" title="分享到豆瓣"></a>
+												<a href="javascript:void(0)" class="reviews_share sshare_kaixin" title="分享到开心网"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="goods_otherinfo" style="height: 507px;">
+									<p class="goods_notice">
+										<a href="javascript:void(0)">降价通知</a>
+									</p>
+									<div class="goods_comment goods_otherinfo_frame goods_comment2">
+										<div class="goods_comment_score">
+											<strong>4.9</strong>
+										</div>
+										<a href="javascript:void(0)" class="showReview">
+											<p class="score_egg score_egg_5"></p>
+										</a>
+										<br>
+										<br>
+										<a href="javascript:void(0)">已有29人评论</a>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class=" wraper index_footer">
+				<div class="helpcenter cls">
+					<dl class="help_fresh">
+						<dt>新手上路</dt>
+						<dd>
+							<ul>
+								<li><a href="#">怎样购物</a></li>
+								<li><a href="#">支付常见问题</a></li>
+								<li><a href="#">免运费政策</a></li>
+								<li><a href="#">发票须知</a></li>
+								<li><a href="#">签收验货流程</a></li>
+								<li><a href="#">用户评论/咨询</a></li>
+								<li><a href="#">大件商品订购流程</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="help_service">
+						<dt>售后服务</dt>
+						<dd>
+							<ul>
+								<li><a href="#">退换货政策</a></li>
+								<li><a href="#">订单查询</a></li>
+								<li><a href="#">售后申请</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="SpecialServies">
+						<dt>特色服务</dt>
+						<dd>
+							<ul>
+								<li><a href="#">关于会员制</a></li>
+								<li><a href="#">价格保护</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="help_cooperate">
+						<dt>申请合作</dt>
+						<dd>
+							<ul>
+								<li><a href="#">申请成为供应商</a></li>
+								<li><a href="#">申请入驻开放平台</a></li>
+								<li><a href="#">友情合作</a></li>
+								<li><a href="#">网站联盟</a></li>
+								<li><a href="#">企业客户</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="help_about">
+						<dt>关于我们</dt>
+						<dd>
+							<ul>
+								<li><a href="#">新蛋集团 </a></li>
+								<li><a href="#">联系我们</a></li>
+								<li><a href="#">诚聘英才</a></li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+				<div class="footer">
+					<a href="https://secure.newegg.cn/Geotrust.aspx" ref="noBlank" target="_blank" class="item3" title="E9WEB02"></a>
+					<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010602000303" ref="noBlank" target="_blank" class="item7" title="网站备案信息" style="position:relative;">
+						<span style="position: absolute;font-size:12px;text-indent:0px;line-height: normal;bottom: 4px;left: 41px;color: #001b75;font-family: serif;">31010602000303</span>
+					</a>
+					<a href="http://sh.cyberpolice.cn/" ref="noBlank" target="_blank" class="item8" title="110网监"></a>
+					<a href="http://www.zx110.org/" ref="noBlank" target="_blank" class="item9" title="网络社会征信网"></a>
+					<p>
+						新蛋集团网站：
+						<a href="http://www.newegg.com/ " class="ml5" target="_blank" style="color:#484848">美国新蛋</a>
+						<a href="http://www.newegg.cn " class="ml10" target="_blank" style="color:#484848">中国新蛋</a>
+						<a href="http://www.newegg.ca/ " class="ml10" target="_blank" style="color:#484848">加拿大新蛋</a>
+						<a href="http://www.neweggsoft.com/ " class="ml10" target="_blank" style="color:#484848">新蛋软件</a>
+					</p>
+					<img src="https://s.neweggimages.com.cn/WebResources/2009/Default/Nest/GomezE9WEB02.gif" height="1px" width="1px" visible="false">
+					<p>
+						<span>© 2001-2018</span>
+						<span>新蛋商贸（上海）有限公司</span>
+						<span>版权所有</span>
+						<span>
+							<a href="http://www.miibeian.gov.cn/" title="上海市互联网准入证书" target="_blank" ref="noBlank" style="color:#484848">沪ICP备:16033615</a>
+						</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

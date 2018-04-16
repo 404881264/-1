@@ -1,0 +1,1414 @@
+*{margin:0;padding:0;}
+form, ul, ol, dl, dd, p {
+    margin: 0;
+    padding: 0;
+}
+div{text-align:left;display:block;}
+body{
+	margin:0 auto;
+	text-align:center;
+	font-family:tahoma,\5b8b\4f53!important;
+	font-size:12px;
+	height:1.5;
+	color:#484848;
+	cursor:default;
+}
+body.sw {
+    min-width: 1200px;
+}
+.sw .wraper {
+    width: 1200px;
+}
+#topbar{
+	line-height:24px;
+	height:24px;
+	background-color: #f1f1f1;
+	border-bottom: 1px solid #e2e2e2;
+	position:relative;
+	z-index: 8003;
+}
+.wraper{
+	width:960px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.fr{
+	float:right;
+	display:inline;
+}
+.fl{
+	float:left;
+	display:inline;
+}
+.mr10{
+	margin-right:10px;
+}
+.topnav{
+	position:relative;
+	font-family:tahoma,\5b8b\4f53;
+}
+.menulist b, .topbar b, .searchbar b {
+    font-weight: normal;
+    display: inline-block;
+    margin: 0 8px;
+}
+.welcome{
+	display:inline-block;
+}
+.ml10{
+	margin-left:10px;
+}
+ul{
+	list-style-type:none;
+}
+form,ul,ol,dl,dd,p{margin:0;padding:0;}
+li{
+	list-style-type:none;
+}
+li{
+	display:list-item;
+	text-align:-webkit-match-parent;
+}
+#topbar .aside a{
+	display:inline-block;
+	_padding-top:0;
+}
+a:hover{
+	text-decoration:underline;
+}
+a{
+	color:#666;
+	text-decoration:none;
+}
+#topbar .aside .hasub{
+	padding:0;
+	height:24px;
+	margin-left:-1px;
+	position:relative;
+}
+#box{
+	position:absolute;
+	text-align:center;
+	left:-59px;
+	display:none;
+	border-top:none;
+	box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+	width:143px;
+	background-color:#FFF;
+	line-height:16px;
+}
+#box .span1{
+	background:blue;
+	padding:5px 2px;
+	margin-bottom:10px;
+}
+#box .span1 a{
+	display:block;
+	color:#FFF;
+}
+#box span{
+	display:inline-block;
+	font-size:14px;
+	margin:3px 1px;
+}
+#box1{
+	position:absolute;
+	text-align:center;
+	left:-26px;
+	display:none;
+	border-top:none;
+	box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+	width:110px;
+	height:30px;
+	background-color:#FFF;
+	line-height:30px;
+}
+#box1 a{
+	color:blue;
+}
+#topbar .hasub s {
+    position: absolute;
+    right: 12px;
+    top: 11px;
+}
+.hasub s {
+    display: inline-block;
+    width: 6px;
+    height: 4px;
+    background-position: left -27px !important;
+    overflow: hidden;
+}
+.hasub .oper {
+    padding: 0 25px 0 11px;
+    position: relative;
+    z-index: 1;
+}
+#topbar .aside .last, .hasub s, #menu .nav a, .icon_new {
+    background: url(http://c6.neweggimages.com.cn/WebResources/2009/Default/Nest/img_v3/sprite_v140425.png) no-repeat;
+}
+#topbar .aside .hasub:hover{
+	background-color:#FFF;
+}
+#topbar .aside .hasub:hover div{
+	display:block;
+}
+#topbar .aside li{
+	float:left;
+	padding:0 5px;
+}
+.hasub .oper{
+	padding:0 25px 0 11px;
+	position:relative;
+	z-index:1;
+}
+#topbar .aside li{
+	float:left;
+	padding:0 5px;
+}
+#topbar .aside a.phone{
+	background-position:0 7px!important;
+}
+#topbar .aside a.phone,#topbar .aside a.biz,#topbar .aside a.bizGroupBuy{
+	padding-left:16px;
+	background:url(https://s.neweggimages.com.cn/WebResources/2009/Default/Nest/img_v3/topbar_sprite150428.png) 0 0 no-repeat;
+}
+#topbar .aside a.bizGroupBuy {
+    background-position: 0 -127px;
+    padding-left: 20px;
+}
+#header{
+	position:relative;
+	z-index:8001;
+}
+.header{
+	height:86px;
+	position:relative;
+}
+.header .logo{
+	width:318px;
+	height:65px;
+	position:absolute;
+	background:url(http://c5.neweggimages.com.cn/WebResources/2009/Default/Nest/img_v3/logocn_1213.png) no-repeat;
+	left:4px;
+	top:11px;
+}
+.inblock{
+	display:inline-block;
+	overflow:hidden;
+	text-indent:-20000px;
+	vertical-align:middle;
+}
+.sw .searchbar{left:368px;}
+.searchbar{
+	position:absolute;
+	height:34px;
+	top:18px;
+}
+.sw .searchbar .searchinput{width:337px;}
+.searchbar .searchinput{
+	height:30px;
+	border:2px solid #f60;
+	float:left;
+	line-height:30px;
+}
+.sw .searchbar .keyword{width:330px;}
+.searchbar .keyword{
+	width:242px;
+	border:0;
+	background:none;
+	text-indent:6px;
+	height:27px;
+}
+.gray, .hasDefaultText{color:#b7b7b7;}
+button, input, select, textarea {
+    font-size: 1em;
+    margin: 0;
+    font-family: tahoma,arial;
+    color: #484848;
+}
+.searchbar .btn_search{
+	width:98px;
+	height:34px;
+	background:#f60;
+	color:#fff;
+	text-indent:0;
+	font:bolder 14px/34px simsun;
+	text-align:center;
+	float:left;
+	cursor:pointer;
+	border:0;
+	border-radius:0 3px 3px 0;
+}
+.searchbar .hot a, .search .hot{color:#767676;}
+.searchbar .hot{
+	margin-top:4px;
+	overflow:hidden;
+	clear:both;
+	line-height:29px;
+}
+.searchbar .hot a{margin:0 6px;}
+.menulist b, .topbar b, .searchbar b {
+    font-weight: normal;
+    display: inline-block;
+    margin: 0 8px;
+}
+#menu{
+	margin-bottom:10px;
+	background:#10286c;
+	position:relative;
+	z-index:8000;
+}
+#menu .wraper{
+	position:relative;
+	height:40px;
+}
+#menu .nav{
+	position:absolute;
+	left:189px;
+	top:0;
+	z-index:11;
+}
+#menu .nav li:hover{background:#295DD7;}
+.nav li{position:relative;}
+#menu .nav li{
+	float:left;
+	height:40px;
+	line-height:40px;
+	transition:all .5s;
+}
+.sw #menu .nav a{
+	padding:0 20px;
+	display:block;
+	color:#fff;
+	background-position:left 100px;
+	font:14px/40px microsoft yahei;
+}
+#menu .menu{
+	width:179px;
+	height:40px;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:10;
+}
+#menu h3{
+	height:40px;
+	background:url(http://c6.neweggimages.com.cn/WebResources/2009/Default/Nest/img_v3/sprite_v140425.png) no-repeat 120px -1252px #F60;
+	text-indent:20px;
+}
+h1,h2,h3,h4{font-size:14px;margin:0;}
+.menu h3 a{
+	height:40px;
+	overflow:hidden;
+	display:block;
+	color:#fff;
+	font:14px/42px microsoft yahei;
+}
+.menulist{
+	position:absolute;
+	top:40px;
+	left:0;
+	width:179px;
+	background-color:#fff;
+	z-index:100;
+}
+.menunavi{
+	border:2px solid #f60;
+	border-top:none;
+}
+.menulist .item{height:73px;width:175px;}
+.cls:after {
+    content: "";
+    font-size: 0;
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.menulist dl{
+	position:relative;
+	height:72px;
+	border-bottom:1px solid #e5e5e5;
+}
+.sw .menulist dd, .sw .menulist .childmenu {
+    left: 149px;
+}
+.menulist dd, .menulist .childmenu {
+    display: none;
+    position: absolute;
+    left: 139px;
+    top: -8px;
+    width: 817px;
+    z-index: 10;
+    background-color:#fff;
+}
+.menulist .ddwrap {
+    zoom: 1;
+    width: 818px;
+    height:480px;
+}
+.menulist dd .ddwrap_brand_table, .menulist .childmenu .ddwrap_brand_table {
+    width: 540px;
+    float: left;
+    position: relative;
+    margin: 7px 0 0 20px;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.menulist .ddwrap_brand_table th {
+    font-weight: bold;
+    padding-left: 0;
+    text-align: left;
+    font-size: 12px;
+    font-family: tahoma,simsun;
+}
+.menulist .ddwrap_brand_table th label{width:50px;display:inline-block;}
+.menulist .ddwrap_brand_table th, .menulist .ddwrap_brand_table td {
+    padding: 6px 8px 20px 15px;
+    line-height: 26px;
+    vertical-align: top;
+    color: #484848;
+}
+.menulist .ddwrap_brand_table td {
+    width: 461px;
+}
+.menulist .ddwrap_brand_table td {
+    padding-left: 9px;
+}
+.menulist .ddwrap_brand_table td a {
+    white-space: nowrap;
+}
+.menulist dl:hover dd{display:block;}
+.menulist dl .dd_top{top:-300px;}
+.menulist dt, .menulist dt a{transition: 1s color;}
+.menulist dt .drop_links{
+	height:60px;
+	display:block;
+	color:#333;
+	font-family:microsoft yahei;
+	padding:10px 15px 0 20px;
+	background:url(http://c6.neweggimages.com.cn/WebResources/2009/Default/Nest/img_v3/sprite_v140425.png) no-repeat 145px -1539px;
+	white-space:nowrap;
+}
+.banner_icon_0 {
+    background: url(http://c5.neweggimages.com.cn/WebResources/2009/Default/Nest/icon/banner_sprit.png) no-repeat center;
+    background-position: 0 0;
+}
+.banner_icon {
+    position: absolute;
+    width: 14px;
+    height: 13px;
+    left: 4px;
+    top: 15px;
+}
+.menulist dt .drop_links h4{height:22px;margin-bottom:2px;}
+.menulist dt .drop_links h4 a {
+    color: #333;
+    font-size: 14px;
+    font-family: microsoft yahei;
+    text-decoration: none;
+}
+.menulist dt .drop_links .se_links{width:140px;white-space:normal;}
+.menulist dt .drop_links .se_links .clf60, .menulist .ddwrap_brand_table td .clf60 {
+    color: #f60;
+}
+.menulist dt .drop_links .se_links a, .menulist .last p {
+    font: 12px microsoft yahei;
+    color: #666;
+}
+.banner_icon_1 {
+    background: url(http://c5.neweggimages.com.cn/WebResources/2009/Default/Nest/icon/banner_sprit.png) no-repeat center;
+    background-position: 0 -21px;
+}
+.banner_icon_2 {
+    background: url(http://c5.neweggimages.com.cn/WebResources/2009/Default/Nest/icon/banner_sprit.png) no-repeat center;
+    background-position: 0 -43px;
+}
+.banner_icon_3 {
+    background: url(http://c5.neweggimages.com.cn/WebResources/2009/Default/Nest/icon/banner_sprit.png) no-repeat center;
+    background-position: 0 -64px;
+}
+.menulist .last{height:175px;}
+.menulist .last dl{border-bottom:none;}
+.menulist .last dl .drop_links{padding:0;}
+.banner_icon_4 {
+    background: url(http://c5.neweggimages.com.cn/WebResources/2009/Default/Nest/icon/banner_sprit.png) no-repeat center;
+    background-position: 0 -84px;
+}
+.menulist .last .drop_links h4{
+	padding:10px 15px 0 19px;
+	position:relative;
+}
+.menulist .last dt .drop_links .se_links{width:150px;}
+.menulist .last .drop_links li {
+    position: relative;
+    z-index: 0;
+    line-height: 24px;
+    height: 27px;
+    overflow: hidden;
+}
+.menulist dt .drop_links .se_links .se_links_a {
+    position: relative;
+    z-index: 10;
+    padding-left: 18px;
+}
+.menulist .last .se_links .se_links_a a {
+    margin-bottom: 7px;
+    display: inline-block;
+    line-height: 23px;
+}
+.sw .menulist dd, .sw .menulist .childmenu {left: 149px;}
+#menu .utility{
+	position:absolute;
+	right:0;
+	top:0;
+	padding-right:114px;
+	height:40px;
+	z-index:1;
+}
+#menu .utility, .utility .utl, .utility .utr {
+    background: url(http://c5.neweggimages.com.cn/WebResources/2009/Default/Nest/img_v3/utility_v0822.png) left -36px;
+}
+.utility .mycart{position:relative;z-index:2;}
+.utility dl{background:#f60;border:2px solid #f60;height:36px;}
+.utility .mycart dt{padding:0 29px 0 13px;margin-top:8px;}
+.utility .mycart dt a{white-space:nowrap;}
+.utility .favor dt a, .utility .mycart dt a {
+    display: inline-block;
+    color: #fff;
+    height: 22px;
+    line-height: 22px;
+    width:70px;
+}
+.utility .opener strong {
+    min-width: 16px;
+    display: inline-block;
+    text-align: center;
+}
+.utility dt strong {
+    margin: 0 3px;
+    color: #ffb380;
+}
+.utility .favor dt s, .utility .mycart dt s {
+    background-position: 0 -1242px;
+}
+.utility dt s {
+    width: 8px;
+    height: 4px;
+    position: absolute;
+    right: 9px;
+    top: 18px;
+    background: url(http://c6.neweggimages.com.cn/WebResources/2009/Default/Nest/img_v3/sprite_v140425.png) no-repeat;
+}
+.utility dd{
+	position:absolute;
+	left:-2px;
+	top:38px;
+	background-color:#fff;
+	display: none;
+	border:2px solid #f60;
+	box-shadow:2px 2px 5px rgba(0,0,0,0.2);
+}
+#menu .utility .mycart:hover{background:#fff;border-bottom:2px solid #fff;}
+#menu .utility .mycart:hover dt s{background:#fff;}
+.utility .mycart:hover a{color:#767676;}
+.utility .mycart:hover .openerC{display:block;border-top:2px solid #fff;}
+.utility .inner{
+	border-top:none;
+	min-height:80px;
+	color:#333;
+}
+.utility .empty{
+	padding:31px 0;
+	text-align:center;
+	color:#999;
+	background-color:#fff;
+}
+.utility .mycart .empty s{
+	width:20px;
+	height:20px;
+	background-position:left -1080px;
+}
+.utility .empty s{
+	width:27px;
+	height:25px;
+	vertical-align:middle;
+	margin-top:-4px;
+	background: url(http://c6.neweggimages.com.cn/WebResources/2009/Default/Nest/img_v3/sprite_v140425.png) no-repeat left -1050px;
+}
+.mr5{margin-right:5px;}
+.utility .favor{
+	position:absolute;
+	right:0;
+	top:0;
+	width:111px;
+	z-index:1;
+}
+.utility .favor dt{margin-top:8px;padding:0 17px 0 20px;border-left:1px solid #fa8b29;}
+.utility dd .egg_btns_t1 {color: #fff;}
+#menu .utility .favor:hover{background:#fff;border-bottom:2px solid #fff;}
+#menu .utility .favor:hover dt s{background:#fff;}
+.utility .favor:hover #gotoShoppingcart_a{color:#767676;}
+.utility .favor:hover #favorContainer{display:block;border-top:2px solid #fff;top:38px;
+left:-117px;}
+.egg_btns_org {
+    background-color: #f7661f;
+    border: 1px solid #f7661f;
+}
+.egg_btns_t1 {
+    padding: 0 10px;
+    height: 23px;
+    line-height: 24px !important;
+}
+.egg_btns_t1, .egg_btns_t2, .egg_btns_t3, .egg_btns_t4 {
+    font: normal 12px simsun;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    border-radius: 2px;
+    vertical-align: top;
+}
+.utility .mycart dt a {
+    white-space: nowrap;
+}
+.section1{position:relative;}
+.section1.cls:after {overflow: hidden;}
+.sw .section1 .col500{width:771px;}
+.section1 .col500{padding:0 0 20px 190px;}
+.sw .section1 .topslider{width:771px;height:245px;}
+.sw .topslider, .sw .topslider li{width:771px;}
+.topslider ul{position: absolute;height:247px;z-index: 1;}
+.topslider .nav {
+    height: 28px;
+    position: absolute;
+    right: 8px;
+    bottom: 9px;
+    z-index: 2;
+}
+.topslider .nav li { float: left; margin-right: 5px; display: inline; cursor: pointer; background: #fcf2cf; border: 1px solid #f47500; color: #d94b01; font-family: arial; font-size: 16px; width:26px;height:26px;text-align:center;line-height:28px;border-radius:16px;}
+.active {font-weight: bold; color: #ffffff; background: #ffb442; position: relative; bottom: 2px; }
+.sw .timelimit, .sw .timelimit .proslider {width: 771px;}
+.timelimit {
+    width: 500px;
+    position: relative;
+}
+.mt10{margin-top:10px;}
+.timelimit h2 {
+    font-size: 16px;
+    font-family: "microsoft yahei";
+    padding-left: 12px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    color: #bf1313;
+}
+.timelimit .more {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 16px;
+    height: 19px;
+    font-weight: bold;
+    padding: 0 12px 0 10px;
+    background: url(http://c5.neweggimages.com.cn/WebResources/2009/Default/Nest/img_v3/arrow130427.png) no-repeat 93px 5px;
+}
+.timelimit .timeleft {
+    position: absolute;
+    left: 50%;
+    top: -3px;
+    color: #666;
+    font-weight: bold;
+    font-size: 14px;
+    height: 28px;
+    line-height: 28px;
+    margin-left: -90px;
+    white-space: nowrap;
+}
+.timeleft span {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    margin: 0 3px;
+    background: #EFEFEF;
+    border-radius: 2px;
+}
+.timelimit .proslider {
+    width: 531px;
+    height: 169px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.sw .timelimit .proslider .mover {width: 744px;}
+.timelimit .proslider .mover {
+    width: 522px;
+    height: 169px;
+    position: relative;
+    margin: 0 auto;
+}
+.timelimit .proslider ul {
+    width: 20000px;
+    position: absolute;
+    left: -1488px;
+    top: 0;
+}
+.sw .timelimit .prolist li {padding: 0 18px;}
+.prolist li {
+    float: left;
+    width: 150px;
+    padding: 0 15px;
+}
+.prolist .img {
+    text-align: center;
+    height: 108px;
+    position: relative;
+}
+.prolist .img img {
+    width: 144px;
+    height: 108px;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.prolist .title {
+    height: 31px;
+    overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-all;
+    margin: 8px 0;
+}
+.prolist .price, .utility .price {
+    color: #f60;
+    font-family: arial;
+    font-weight: bold;
+}
+.prolist .price {font-size: 14px;}
+.col230{width:230px;}
+.bombshell {
+    border: 2px solid #f1d4b3;
+    background-color: #ffefe0;
+    height: 241px;
+    position: relative;
+    font-family: "microsoft yahei";
+    font-size: 14px;
+}
+.bombshell .mover{height:241px;}
+.mb10{margin-bottom:10px;}
+.bombshell .nav, .tuan .nav {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    height: 10px;
+    line-height: 0;
+    overflow: hidden;
+}
+.bombshell .nav .current, .tuan .nav .current {
+    background-position: left top;
+}
+.bombshell .nav a, .tuan .nav a {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    overflow: hidden;
+    text-indent: -20000px;
+    margin-right: 7px;
+    background: url(http://c5.neweggimages.com.cn/WebResources/2009/Default/Nest/img_v3/dotnav20140512.png) no-repeat -16px top;
+}
+.bombshell ul {
+    width: 20000px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.bombshell .prolist li {
+    width: 226px;
+    height: 241px;
+    padding: 0;
+}
+.current {font-weight: bold; color: #ffffff; position: relative; }
+.group_buy_ad{height:218px;}
+.mb20{margin-bottom:20px;}
+.sw .col720{width:960px;}
+.hot_sale h2 {
+    border-top: none;
+    padding-top: 7px;
+}
+.floor_orange h2 {
+    color: #f60;
+    border-bottom-color: #f60;
+}
+.floor h2 {
+    height: 38px;
+    padding-left: 10px;
+    font-size: 20px;
+    border-right: none;
+    line-height: 36px;
+    border-bottom: 3px solid #f60;
+    font-family: "microsoft yahei";
+}
+.sw .hot_title{width:880px;}
+.hot_title {
+    position: absolute;
+    top: 16px;
+    left: 80px;
+    width: 641px;
+}
+.hot_title span{float:right;}
+.hot_sale .tabc {
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #dadada;
+    padding-bottom: 3px;
+    height: 234px;
+}
+.hot_sale .tabc ul {
+    width: 20000px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.sw .hot_sale .prolist li {padding-left: 24px;}
+.sw .floor .prolist li {
+    padding: 15px 19px 16px;
+    width: 196px;
+    height:199px;
+    overflow:hidden;
+}
+.hot_sale .img {height: auto;}
+.prolist .img {
+    text-align: center;
+    position: relative;
+}
+.hot_sale .prolist .img img {
+    width: 180px;
+    height: 135px;
+}
+.prolist .img img {
+    width: 144px;
+    height: 108px;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.hot_sale .priceline {
+    margin-left: 18px;
+    width: 85px;
+    float: left;
+    line-height: 14px;
+    padding-top: 3px;
+}
+.egg_btns_org {
+    background-color: #f7661f;
+    border: 1px solid #f7661f;
+}
+.egg_btns_t1 {
+    padding: 0 10px;
+    height: 23px;
+    line-height: 24px;
+}
+.egg_btns_t1, .egg_btns_t2, .egg_btns_t3, .egg_btns_t4 {
+    font: normal 12px simsun;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    border-radius: 2px;
+    vertical-align: top;
+}
+.prolist .img .icon_pro {
+    display: block;
+    width: 52px;
+    height: 52px;
+    overflow: hidden;
+    text-indent: -20000px;
+    position: absolute;
+    right: -10px;
+    top: 0;
+}
+.prolist .img .icon_pro img {
+    width: auto!important;
+    height: auto!important;
+}
+.clo230{width:230px;}
+.news {
+    padding: 10px 0;
+    width: 99%;
+    border: 1px solid #d9d9d9;
+    height: 100px;
+    background: #f6f6f6;
+    margin-top: 10px;
+}
+.news dl dt {
+    font: bolder 14px simusn;
+    color: #666;
+    margin-bottom: 8px;
+    height: 18px;
+    padding: 0 10px 5px 10px;
+    border-bottom: 1px dashed #D9D9D9;
+}
+.news dl dt h5 {
+    font: bolder 14px simusn;
+    color: #666;
+    margin: 0 0 8px 0;
+}
+.news dt a {
+    font: 12px simsun;
+    float: right;
+    margin: 1px 10px 0 10px;
+}
+.news dl dd a {
+    color: #666;
+}
+.icon_new {
+    width: 20px;
+    height: 9px;
+    background-position: 0 -1031px;
+}
+.news dl dd {
+    font: 12px simusn;
+    margin-bottom: 6px;
+    height: 14px;
+    overflow: hidden;
+    clear: both;
+    padding: 0 10px;
+}
+#topslider_child {width: 230px;}
+.sw .hot_comment_goods .hot_title {
+    width: 1120px;
+}
+.floor {
+    overflow: hidden;
+    position: relative;
+}
+.sw .hot_comment_goods {
+    width: 1200px;
+}
+.hot_comment_goods {
+    height: 325px;
+}
+.sw .hot_comment_goods_cnt {width: 1198px;}
+.hot_comment_goods_cnt {
+    width: 958px;
+    height: 275px;
+    border: 1px solid #dadada;
+    position: absolute;
+    overflow: hidden;
+}
+.hot_comment_goods_c {
+    float: left;
+    padding-top: 35px;
+    height: 240px;
+    overflow: hidden;
+    width: 94px;
+    z-index: 10;
+    background: #fff;
+    border-right: 1px solid #dbdbdb;
+}
+.hot_comment_goods_cur .hot_comment_goods_child1 {
+    display: block;
+}
+.hot_comment_goods_child1 .hot_comment_content {
+    width: 338px;
+    float: left;
+}
+.hot_comment_title {
+    color: #333;
+    font: 14px tahoma,microsoft yahei;
+    margin-bottom: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 360px;
+}
+.hot_comment_goods_child1 .hot_comment_title strong {
+    color: #f60;
+}
+.hot_comment_title a {
+    color: #333;
+    display: inline-block;
+    font: 14px tahoma,microsoft yahei;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    width: 270px;
+}
+.hot_comment_goods_child1 .hot_comment_content p {
+    font: 12px/20px tahoma,simsun;
+    color: #676767;
+}
+.hot_comment_goods_child1 .hot_comment_text {
+    height: 123px;
+    margin-bottom: 10px;
+}
+.hot_comment_goods_child1 .hot_comment_score {float: left;}
+.hot_comment_goods_child1 .rank {
+    padding-top: 4px;
+    float: left;
+    margin-bottom: 4px;
+}
+.hot_comment_goods_child1 .hot_comment_score a.rankB10 {
+    background: url(http://c8.neweggimages.com.cn/WebResources/2009/Default/Nest/img_v3/flat_rank.gif) no-repeat left 0;
+    float: left;
+    padding-left: 65px;
+    height: 12px;
+    line-height: 12px;
+    font-size: 10px;
+    color: #039;
+}
+.hot_comment_goods_child1 .hot_comment_user {
+    float: right;
+    width: 158px;
+}
+.hot_comment_goods_child1 .hot_comment_user p {
+    float: left;
+    width: 100px;
+    margin-right: 10px;
+    text-align: right;
+    color: #676767;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font: 12px/20px tahoma,simsun;
+}
+.hot_comment_goods_child1 .hot_comment_img {
+    float: left;
+    width: 250px;
+    height: 239px;
+    margin: 0 30px;
+}
+.mt5{margin-top:5px;}
+.sw .promotion {width: 958px;}
+.promotion {
+    width: 718px;
+    border: 1px solid #d9d9d9;
+}
+.sw .promotion .tab a {width: 239px;}
+.promotion .tab {
+    height: 30px;
+    line-height: 30px;
+    background: url(http://c8.neweggimages.com.cn/WebResources/2009/Default/Nest/img_v3/home_sprite.png) repeat-x left -67px;
+    overflow: hidden;
+}
+.promotion .tab .now {
+    color: #f60;
+    background: #FFF;
+    border-bottom: 1px solid #fff;
+}
+.promotion .tab a {
+    display: block;
+    float: left;
+    width: 179px;
+    height: 29px;
+    line-height: 30px;
+    _line-height: 29px;
+    color: #666;
+    font-size: 14px;
+    font-family: "microsoft yahei";
+    border-right: 1px solid #d9d9d9;
+    background: #F6F6F6;
+    text-align: center;
+}
+.sw .promotion .tab a.last {width: 238px;}
+.promotion .tab a.last {
+    width: 178px;
+    border-right: none;
+}
+.sw .promotion .tabc {
+    width: 938px;
+    padding: 30px 10px 0;
+}
+.promotion .tabc {
+    width: 716px;
+    padding: 30px 1px 0;
+    height: 208px;
+    overflow: hidden;
+    position: relative;
+}
+.sw .promotion .tabc ul {width: 950px;}
+.sw .promotion .tabc li {
+    padding: 0 18px;
+}
+.promotion .prolist .title {
+    margin-bottom: 14px;
+}
+.col240 {
+    width: 240px;
+    height: 270px;
+}
+.col240 .bombshell {
+    width: 238px;
+    height: 268px;
+    border: 1px solid #d9d9d9;
+    border-left: 0;
+}
+.col240 .bombshell .mover {
+    width: 238px;
+    height: 268px;
+}
+.col240 .bombshell .prolist li {
+    width: 238px;
+    height: 268px;
+}
+.sw .floor .adcon {padding-right: 10px;}
+.sw .floor .section_cont, .sw .floor .adcon {width: 938px;}
+.floor .adcon {
+    padding-top: 0 !important;
+    height: 409px;
+    overflow: hidden;
+}
+.clo720 .floor {
+    width: 960px;
+}
+.floor .section_cont, .floor .section_cont, .floor .adcon {
+    padding: 10px 10px 0;
+    border: 1px solid #dadada;
+    border-top: none;
+    border-bottom: 1px solid #e9e9e9;
+}
+.floor .adcon .prolist {
+    height: 179px;
+    padding: 25px 12px 1px 19px;
+    width: 191px;
+    overflow: hidden;
+}
+.floor .adcon .prolist a {float: none;}
+.prolist .img img {
+    width: 144px;
+    height: 108px;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.prolist .img .icon_pro {
+    display: block;
+    width: 52px;
+    height: 52px;
+    overflow: hidden;
+    text-indent: -20000px;
+    position: absolute;
+    right: -10px;
+    top: 0;
+}
+.prolist .img .icon_pro img {
+    width: auto!important;
+    height: auto!important;
+}
+.adcon .title img.vm {display: inline-block;}
+.vm {vertical-align: middle;}
+.floor .adcon .prolist a {float: none;}
+.sw .floor .ad_slider {margin-left: 0;}
+.floor .ad_slider {
+    width: 480px;
+    height: 205px;
+}
+.floor .ad_slider ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20000px;
+}
+.floor .ad_slider li {
+    width: 480px;
+    height: 205px;
+    overflow: hidden;
+    float: left;
+}
+.floor .adcon a {float: left;}
+.floor .ad_slider .nav {
+    position: absolute;
+    right: 5px;
+    bottom: 6px;
+}
+.floor .ad_slider .nav a {
+    display: inline-block;
+    width: 18px;
+    height: 16px;
+    text-align: center;
+    line-height: 14px;
+    color: #fff;
+    margin-left: 3px;
+    font-size: 11px;
+    background: url(http://c5.neweggimages.com.cn/WebResources/2009/Default/Nest/img_v3/navsbg.png) no-repeat -20px top;
+}
+.floor .h2_1 {
+    height: 38px;
+    padding-left: 10px;
+    color: #2565bd;
+    font-size: 20px;
+    border-right: none;
+    line-height: 36px;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 3px solid #2565bd;
+    font-family: "microsoft yahei";
+}
+.sw .brandlogo {width: 955px;}
+.brandlogo {
+    padding: 6px 0 6px 3px;
+    overflow: hidden;
+    border: 1px solid #dadada;
+    border-top: none;
+}
+.brandlogo ul {width: 1200px;}
+.brandlogo li {
+    width: 119px;
+    height: 40px;
+    text-align: center;
+    overflow: hidden;
+    float: left;
+}
+.brandlogo a {
+    display: block;
+    width: 100px;
+    height: 40px;
+    margin: 0 auto;
+    overflow: hidden;
+    position:relative;
+}
+.brandlogo a img{
+	position:absolute;
+	top:0;
+	left:0px;
+}
+.col230 {width: 230px;}
+.hotrank {
+    width: 230px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 17px;
+}
+.hotrank h3 {
+    font-family: "microsoft yahei";
+    font-size: 12px;
+    color: #666;
+    font-weight: normal;
+    padding-top: 3px;
+    height: 27px;
+    line-height: 27px;
+    padding-left: 6px;
+    border: 1px solid #dbdbdb;
+    border-bottom-color: #d9d9d9;
+}
+.hotrank .inner {
+    border: 1px solid #dbdbdb;
+    border-top: none;
+}
+.hotrank .tab {
+    position: absolute;
+    left: 50px;
+    top: 4px;
+    width: 180px;
+    height: 28px;
+    overflow: hidden;
+}
+.hotrank .tab a {
+    display: block;
+    float: left;
+    width: 56px;
+    height: 26px;
+    margin-right: 1px;
+    color: #999;
+    line-height: 26px;
+    text-align: center;
+    background-color: #e9e9e9;
+    border: 1px solid #e9e9e9;
+    border-bottom-color: #dbdbdb;
+}
+.hotrank .tab .now {
+    color: #f60;
+    font-weight: bold;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    border-bottom-color: #fff;
+}
+.hotrank .prolist li {
+    padding: 16px 12px 16px 100px;
+    width: 116px;
+    height: 60px;
+    position: relative;
+    border-bottom: 1px solid #dbdbdb;
+}
+.hotrank .prolist .img {
+    width: 80px;
+    height: 60px;
+    overflow: hidden;
+    position: absolute;
+    left: 12px;
+    top: 16px;
+}
+.hotrank .prolist a {
+    color: #000;
+}
+.hotrank .prolist .img img {
+    width: 80px;
+    height: 60px;
+}
+.hotrank .prolist .title {
+    margin-top: 0;
+}
+.hotrank .prolist .last {
+    border-bottom: none;
+}
+.hotrank .hotrank_ad_img {
+    display: inline-block;
+    width: 230px;
+    height: 90px;
+    overflow: hidden;
+}
+.sw .card li {margin-right: 13px;width: 385px;}
+.card li.b_green {border-color: #caf2c2;}
+.card li {
+    float: left;
+    margin-right: 6px;
+    width: 149px;
+    padding: 2px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+.sw .card li a {width: 385px;}
+.card li a {
+    width: 149px;
+    display: block;
+    overflow: hidden;
+}
+.sw .card li img {width: 100%;}
+.sw .card img {margin-left: 0;}
+.card li.b_gb {border-color: #c2eef2;}
+.sw .card li.b_blue {margin-right: 0px;}
+.card li.b_blue {border-color: #cdf;}
+.sw .infobook {width: 1200px;}
+.infobook {
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 960px;
+    position: relative;
+}
+.sw .mod_way_item {width: 350px;}
+.mod_way_item {
+    margin-top: 10px;
+    float: left;
+}
+.mod_way_img_app {background-position: left -130px;}
+.mod_way_img {
+    background-image: url(http://c5.neweggimages.com.cn/WebResources/2009/Default/Nest/img_v3/infobook_qrcode_v1.png);
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+.mod_way_info li {margin-left: 76px;}
+.mod_way_info_title {
+    font-size: 14px;
+    color: #484848;
+    font-weight: bold;
+}
+.mod_way_info_bottom {padding-top: 14px;}
+.sw .mod_way_item_Other {width: 150px;}
+#footer {
+    margin-top: 55px;
+    background: #FFF;
+    border-top: 1px solid #FFF;
+}
+#footer .wraper, .footer {text-align: center;}
+#footer .index_footer .helpcenter {clear: both;}
+.sw .helpcenter {
+    padding-left: 1.5%;
+    margin-top: 50px;
+}
+.helpcenter dl {
+    float: left;
+    width: 17.64%;
+    padding-right: 1%;
+    margin-left: 1.5%;
+    height: 185px;
+    display: inline;
+    border-right: 1px solid #dbdbdb;
+}
+.helpcenter .help_fresh dt {background-position: left 2px;}
+.helpcenter dt {
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 28px;
+    top: -10px;
+    height: 20px;
+    overflow: hidden;
+    line-height: 20px;
+    background: url(http://c7.neweggimages.com.cn/WebResources/2009/Default/Nest/img_v3/helpcenter.gif) no-repeat;
+    color: #484848;
+}
+.helpcenter dd {padding: 10px 0 0 16px;}
+.helpcenter li, .helpcenter dd a {
+    line-height: 22px;
+    height: 22px;
+    overflow: hidden;
+}
+.helpcenter dd a {
+    background: url(http://c5.neweggimages.com.cn/WebResources/2009/Default/Nest/img_v3/dot.gif) no-repeat left center;
+    display: inline-block;
+    padding-left: 12px;
+}
+.helpcenter li, .helpcenter dd a {
+    line-height: 22px;
+    height: 22px;
+    overflow: hidden;
+}
+.helpcenter .help_service dt {background-position: left -113px;}
+.helpcenter .SpecialServies dt {
+    background: url(http://c6.neweggimages.com.cn/WebResources/2009/Default/Nest/img_v3/SpecialServies.png) no-repeat left center;
+}
+.helpcenter .help_cooperate dt {background-position: left -152px;}
+.helpcenter .help_about {
+    width: 92px;
+    border-right: none;
+}
+.helpcenter .help_about dt {background-position: left -190px;}
+.footer {
+    font-size: 0;
+    padding: 80px 0 30px;
+}
+.footer .item3 {
+    background-position: left -92px!important;
+    width: 116px;
+}
+.footer .item1, .footer .item2, .footer .item3, .footer .item4, .footer .item5, .footer .item6, .footer .item7, .footer .item8, .footer .item9, .footer .item10{
+	display: inline-block;
+    background: url(https://s.neweggimages.com.cn/WebResources/2009/Default/Nest/img_v3/certi20150925.png) no-repeat;
+    height: 45px;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    text-indent: -20000px;
+    margin: 0 3px 10px 2px;
+}
+.footer .item7 {
+    background-position: left -276px;
+    width: 130px;
+}
+.footer span {
+    margin: 0 2px;
+}
+.footer .item8 {
+    background-position: left -326px;
+    width: 127px;
+}
+.footer .item9 {
+    background-position: left -376px;
+    width: 106px;
+}
+.footer p {
+    font-size: 12px;
+    padding: 0 0 10px;
+}
+.ml5 {
+    margin-left: 5px;
+}
+.ml10 {
+    margin-left: 10px;
+}
+.footer p span {
+    font-family: Tahoma;
+}
+.footer span {
+    margin: 0 2px;
+}

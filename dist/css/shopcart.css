@@ -1,0 +1,375 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0; }
+
+.top {
+  overflow: hidden;
+  zoom: 1; }
+
+.top .wrapper {
+  margin-bottom: 18px;
+  padding-top: 20px; }
+
+.wrapper {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 980px;
+  zoom: 1; }
+
+.top .egg {
+  background: url("https://s.neweggimages.com.cn/WebResources/2009/Default/Nest/img_v3/logocn_1213.png") no-repeat scroll 0 0;
+  float: left;
+  height: 69px;
+  text-indent: -3000px;
+  width: 320px; }
+
+.head_title {
+  border-left: 1px solid #D9D9D9;
+  float: left;
+  font: 24px/49px microsoft yahei;
+  margin: 5px 0 0 25px;
+  padding-left: 26px; }
+
+.f_gray {
+  color: #808080 !important; }
+
+.fr {
+  float: right;
+  display: inline; }
+
+div {
+  text-align: left; }
+
+.vm {
+  vertical-align: middle; }
+
+.tr {
+  text-align: right; }
+
+.topnav {
+  position: relative;
+  font-family: tahoma,\5b8b\4f53; }
+
+.fl {
+  float: left;
+  display: inline; }
+
+a {
+  color: #666;
+  text-decoration: none; }
+
+.mr10 {
+  margin-right: 10px; }
+
+.welcome {
+  display: inline-block; }
+
+.ml10 {
+  margin-left: 10px; }
+
+img {
+  border: none; }
+
+.right {
+  text-align: right !important; }
+
+.mt10 {
+  margin-top: 10px; }
+
+a.funcLink {
+  color: #1C459D;
+  font-weight: normal;
+  z-index: 1000;
+  background: none; }
+
+a.funcLink:hover {
+  color: #f60; }
+
+.bg_gray {
+  border-top: 1px solid #ededed;
+  height: 100%; }
+
+div.wraper {
+  width: 980px; }
+
+.scar_main {
+  padding-top: 65px; }
+
+.prelative {
+  position: relative; }
+
+.wraper > .content {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.ShoppingContentTable {
+  position: relative; }
+
+.ShoppingContentTable .bg_show {
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 958px;
+  height: 1px;
+  background-image: url(http://c8.neweggimages.com.cn/WebResources/2009/Default/Nest/shoppingcar/bg_shadow.jpg);
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  padding-bottom: 4px;
+  z-index: 10; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+th.bl_gray {
+  border-bottom: 1px solid #d9d9d9; }
+
+td.ll_darkgray {
+  border-left: 1px solid #bbb; }
+
+.pb20 {
+  padding-bottom: 20px !important;
+  position: relative; }
+
+.pt20 {
+  padding-top: 20px !important; }
+
+.Arial14 {
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 14px; }
+
+.orange {
+  color: #fe7b23; }
+
+.center {
+  color: #628100;
+  text-align: center !important; }
+
+.btncheckout {
+  width: 125px;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-family: '微软雅黑';
+  font-size: 18px; }
+
+.egg_btns_org {
+  background-color: #f7661f;
+  border: 1px solid #f7661f; }
+
+.egg_btns_t3 {
+  font: normal 18px/46px microsoft yahei;
+  padding: 0 14px;
+  height: 46px;
+  border-radius: 2px; }
+
+.wraper {
+  margin-left: auto;
+  margin-right: auto; }
+
+.ShoppingContentTable .th_bd {
+  border-bottom: 1px solid #bbb; }
+
+th.ll_darkgray {
+  border-left: 1px solid #bbb; }
+
+td {
+  font-size: 12px; }
+
+span, .r-1 {
+  font-size: 12px; }
+
+.bg_shadow {
+  background-image: url(http://c8.neweggimages.com.cn/WebResources/2009/Default/Nest/shoppingcar/bg_shadow.jpg);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  padding-bottom: 4px; }
+
+.mt20 {
+  margin-top: 20px; }
+
+.recommendarea {
+  background-color: #fff;
+  border: 1px solid #bfbfbf;
+  width: 958px;
+  position: relative; }
+
+.recommendarea .tabs .selected {
+  color: #f60;
+  font-weight: bold; }
+
+.recommendarea .tabs .tab {
+  display: inline-block;
+  text-align: center;
+  padding: 0 20px;
+  font-size: 14px;
+  height: 32px;
+  line-height: 32px;
+  width: 80px; }
+
+.recommendarea .tabs .tab_footers {
+  height: 2px;
+  line-height: 2px;
+  overflow: hidden;
+  background-color: #ccc;
+  padding: 0;
+  margin: 0; }
+
+.recommendarea .tab_footers .selected {
+  background-color: #f60; }
+
+.recommendarea .tabs .selected {
+  color: #f60;
+  font-weight: bold; }
+
+.recommendarea .tabs .tab_footer {
+  float: left;
+  height: 2px;
+  line-height: 2px;
+  padding: 0 20px;
+  margin: 0;
+  overflow: hidden;
+  width: 80px; }
+
+.recommendarea .tab_content {
+  position: relative;
+  overflow: hidden;
+  word-break: break-all; }
+
+.recommendarea .mover {
+  width: 980px;
+  height: 515px;
+  margin: 0 30px; }
+
+.recommendarea .mover .prolist {
+  margin-top: 27px;
+  text-align: center;
+  height: 100%; }
+
+.prolist li {
+  float: left;
+  width: 150px;
+  padding: 0 37px;
+  height: 244px; }
+
+li {
+  list-style: none; }
+
+body {
+  margin: 0 auto;
+  text-align: center;
+  font-family: tahoma, \5b8b\4f53 !important;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #484848;
+  cursor: default; }
+
+.egg_btns_white {
+  background: #fff;
+  border: 1px solid #838383;
+  color: #000;
+  font-weight: normal;
+  cursor: pointer; }
+
+.egg_btns_t1 {
+  padding: 0 10px;
+  height: 23px;
+  line-height: 24px; }
+
+.egg_btns_t1 {
+  font: normal 12px simsun;
+  text-align: center;
+  display: inline-block;
+  border-radius: 2px;
+  vertical-align: top; }
+
+.mt15 {
+  margin-top: 15px; }
+
+.prolist .title {
+  height: 36px;
+  overflow: hidden;
+  word-wrap: break-word;
+  word-break: break-all;
+  margin: 4px 0; }
+
+.sc_goodsPic img {
+  display: inline-block; }
+
+.sc_goodsPic span {
+  display: inline-block;
+  width: 279px; }
+
+.Arial14 {
+  margin-left: 30px; }
+
+.span_1 {
+  margin-left: 8px; }
+
+#footer {
+  margin-top: 55px;
+  background: #FFF;
+  border-top: 1px solid #FFF; }
+
+#footer .wraper, .footer {
+  text-align: center; }
+
+.footer {
+  padding: 30px 0 10px;
+  font-size: 0; }
+
+.footer .item3 {
+  background-position: left -92px !important;
+  width: 116px; }
+
+.footer .item1, .footer .item2, .footer .item3, .footer .item4, .footer .item5, .footer .item6, .footer .item7, .footer .item8, .footer .item9, .footer .item10 {
+  display: inline-block;
+  background: url(https://s.neweggimages.com.cn/WebResources/2009/Default/Nest/img_v3/certi20150925.png) no-repeat;
+  height: 45px;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  text-indent: -20000px;
+  margin: 0 3px 10px 2px; }
+
+.footer .item7 {
+  background-position: left -276px;
+  width: 130px; }
+
+.footer span {
+  margin: 0 2px; }
+
+.footer .item8 {
+  background-position: left -326px;
+  width: 127px; }
+
+.footer .item9 {
+  background-position: left -376px;
+  width: 106px; }
+
+.footer p {
+  font-size: 12px;
+  padding: 0 0 10px; }
+
+.ml5 {
+  margin-left: 5px; }
+
+.ml10 {
+  margin-left: 10px; }
+
+.footer p span {
+  font-family: Tahoma; }
+
+.footer span {
+  margin: 0 2px; }
+
+#VendorSysNo_1 tr {
+  border-bottom: 1px solid #f60; }
+
+#VendorSysNo_1 tr .num_b a {
+  border: 1px solid #f60;
+  width: 10px;
+  display: inline-block;
+  text-align: center; }

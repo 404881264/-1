@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>用户注册</title>
+		<script src = "js/jquery-1.10.1.min.js"></script>
+		<link rel="stylesheet" href="css/register.css" />
+		<script type="text/javascript">
+			window.onload = function(){
+				var oUsername = document.getElementById("username");
+				var oUserSpan = document.getElementById("username_span");
+				var oCode = document.getElementById("imgValidator");
+				var oBtn = document.getElementById("Btn");
+				var i = 0;
+				
+				oBtn.onclick = function(){
+					i += 0.0001;
+					oCode.src=`https://secure.newegg.cn/Common/ImageValidator.aspx?Type=register&r=0.026438792032835057+${i}`;
+				}
+
+
+				//失去焦点
+				oUsername.onblur = function(){
+						//<1>清除空格
+						var oValue = this.value.replace(/\s/g, "");
+						this.value = oValue;
+						//<2>判断用户名不能为空
+						if(!oValue){
+							oUserSpan.innerHTML = "用户名不能为空";
+						}else if(oValue.length > 18 || oValue.length < 6){
+							oUserSpan.innerHTML = "用户名长度必须是6~18位";
+						}else if(!/[a-zA-Z]/.test(oValue[0])){
+							oUserSpan.innerHTML = "用户名首字母必须为字母";
+						}else if(/\W/.test(oValue)){
+							oUserSpan.innerHTML = "用户名必须由数字字母下划线组成";
+						}else{
+							oUserSpan.innerHTML = "√"
+						}
+					}
+				//       邮箱账户
+				var oPassword = document.getElementById("password");
+				var oPassSpan = document.getElementById("password_span");
+				//键盘输入
+				oPassword.onblur = function(){
+					var oValue = this.value;
+
+					//<2>判断密码是否输入为空
+					if(!oValue){
+						oPassSpan.innerHTML = "密码不能为空";
+					}else if(oValue.length > 16 || oValue.length < 6){
+						oPassSpan.innerHTML = "密码是6~16位";
+					}else{
+							oPassSpan.innerHTML = "√"
+					}
+				}
+				//密码
+				var oPassword1 = document.getElementById("password1");
+				var oPassSpan1 = document.getElementById("password_span1");
+				oPassword1.onblur = function(){
+					var oValue = oPassword1.value;
+					if(oValue == oPassword.value){
+						oPassSpan1.innerHTML = "✔️";
+					}else{
+						oPassSpan1.innerHTML = "两次填写的密码不一致";
+					}
+				}
+				//确认密码
+				var oPhone = document.getElementById("txtPhone");
+				var oPhoneSpan = document.getElementById("phone_span");
+				oPhone.onblur = function(){
+					var oValue = oPhone.value;
+					if(!oValue){
+						oPhoneSpan.innerHTML = "手机号不能为空";
+					}else if(oValue.length == 11){
+						var isYes = false;
+						if(/^1\d{10}$/.test(oValue)){
+							isYes = true;
+						}
+						if (isYes) {
+							oPhoneSpan.innerHTML = "手机号码可用";
+						}else{
+							oPhoneSpan.innerHTML = "请填写正确的手机号";
+						};					
+					}else{
+						oPhoneSpan.innerHTML = "请填写正确的手机号";
+					}
+				}
+				//手机号
+				var oCode1 = document.getElementById("txtCodeForEmail");
+				var oCode1Span = document.getElementById("tipCodeForEmail");
+				oCode1.onblur = function(){
+					var oValue = oCode1.value;
+					var str = oCode.innerHTML;
+					str1=str.concat("");
+					str1=str1.toLowerCase();
+					//alert(str1);
+					if(oValue){
+						oCode1Span.innerHTML = "验证码正确";
+					}else{
+						oCode1Span.innerHTML = "验证码不正确";
+					}
+				}
+				//验证码
+			
+				var oRegister = document.getElementById("register");
+				var Step = document.getElementById("step1");
+				var aInputs = Step.getElementsByTagName("input");
+				oRegister.onclick = function(){
+					$.ajax({
+						type: "post",
+						url: "http://datainfo.duapp.com/shopdata/userinfo.php",
+						data: `status=register&userID=${aInputs[0].value}&password=${aInputs[1].value}`,
+						success: function(data){
+							if (data==1) {
+								alert("注册成功！")
+							} else if(data==0){
+								alert("用户名重名！")
+							};
+						},
+						error: function(e){
+							alert(e);
+						}
+					})
+				}
+			}
+		</script>
+
+	</head>
+	<body>
+		<div id="topbar">
+			<div class="wraper topbar">
+				<div class="fr topnav">
+					<span class="userpanel fl mr10">
+						<span class="welcome ml10">
+							欢迎来新蛋购物！
+						</span>
+					</span>
+					<ul class="aside fr" style="*float:left;">
+						<li>
+							<a href="#">帮助中心</a>
+						</li>
+						<li class="hasub service">
+							<a href="#" class="oper">客服服务</a>
+							<s></s>
+							<div id="box">
+								<span style="color:orange">400-820-4400</span>
+								<span style="color:black">021-67072699</span>
+								<span>每天 9:00-18:00</span>
+								<span class="span1"><a href="#">在线咨询</a></span>
+								<span class="span1"><a href="#">邮件我们</a></span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<ul class="aside">
+					<li>
+						<a href="#" target="_blank" class="phone">掌上新蛋</a>
+					</li>
+					<li>
+						<a href="#" target="_blank" class="biz">企业客户</a>
+					</li>
+					<li>
+						<a href="#" target="_blank" class="join">入驻开放平台</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="top">
+			<div class="wrapper">
+				<a href="index.html" class="ie6png"></a>
+				<div class="head_title">新用户注册</div>
+			</div>
+		</div>
+		<div class="register_box">
+			<div id="step1" style="display:block;">
+				<div class="friend_link wraper clearfix">
+					<div class="fr">
+						已是新蛋会员 现在
+						<a href="Login.html" class="red">登录</a>
+					</div>
+				</div>
+				<div class="register_box">
+				<div class="wraper">
+					<div class="register_con">
+						<div class="register_con_box">
+							<label for="username">用户名：</label>
+							<input id = "username" maxlength="11" class="reg_txt_0"/>
+							<em class="input_tips  input_usrname_wrong" id="username_span"></em>
+					
+						</div>
+						<div class="register_con_box">
+							<label for="password">密码：</label>
+							<input id = "password" maxlength="11" class="reg_txt_0" type="password" />
+							<em class="input_tips  input_usrname_wrong" id="password_span"></em>
+							
+						</div>
+						<div class="register_con_box">
+							<label for="password1">确认密码：</label>
+							<input id = "password1" maxlength="11" class="reg_txt_0" type="password" />
+							<em class="input_tips  input_usrname_wrong" id="password_span1"></em>
+							
+						</div>
+						<div class="register_con_box">
+							<label for="txtPhone">手机号：</label>
+							<input id = "txtPhone" maxlength="11" class="reg_txt_0" />
+							<em class="input_tips  input_usrname_wrong" id="phone_span"></em>
+							
+						</div>
+						<div class="register_con_box">
+							<label for="txtCodeForEmail">验证码：</label>
+							<input id = "txtCodeForEmail" class="reg_txt_1" maxlength="4" />
+							<button class="code" id="Btn">
+								<img class="vimg" style="cursor:pointer" src="https://secure.newegg.cn/Common/ImageValidator.aspx?Type=register" ref1="https://secure.newegg.cn/Common/ImageValidator.aspx?Type=register" id="imgValidator" alt height="30" width="115">
+							</button>
+							<a class="change_code">
+								<em class="input_tips  input_usrname_wrong" id="tipCodeForEmail"></em>
+							</a>
+						</div>	
+						<div class="register_con_box" id="code_btn_0">
+							<span>
+								<button class="code_btn_0" id="register">
+									注册
+								</button>
+							</span>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="wraper">
+				<div class="footer">
+					<a href="https://secure.newegg.cn/Geotrust.aspx" ref="noBlank" target="_blank" class="item3" title="E9WEB02"></a>
+					<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010602000303" ref="noBlank" target="_blank" class="item7" title="网站备案信息" style="position:relative;">
+						<span style="position: absolute;font-size:12px;text-indent:0px;line-height: normal;bottom: 4px;left: 41px;color: #001b75;font-family: serif;">31010602000303</span>
+					</a>
+					<a href="http://sh.cyberpolice.cn/" ref="noBlank" target="_blank" class="item8" title="110网监"></a>
+					<a href="http://www.zx110.org/" ref="noBlank" target="_blank" class="item9" title="网络社会征信网"></a>
+					<p>
+						新蛋集团网站：
+						<a href="http://www.newegg.com/ " class="ml5" target="_blank" style="color:#484848">美国新蛋</a>
+						<a href="http://www.newegg.cn " class="ml10" target="_blank" style="color:#484848">中国新蛋</a>
+						<a href="http://www.newegg.ca/ " class="ml10" target="_blank" style="color:#484848">加拿大新蛋</a>
+						<a href="http://www.neweggsoft.com/ " class="ml10" target="_blank" style="color:#484848">新蛋软件</a>
+					</p>
+					<img src="https://s.neweggimages.com.cn/WebResources/2009/Default/Nest/GomezE9WEB02.gif" height="1px" width="1px" visible="false">
+					<p>
+						<span>© 2001-2018</span>
+						<span>新蛋商贸（上海）有限公司</span>
+						<span>版权所有</span>
+						<span>
+							<a href="http://www.miibeian.gov.cn/" title="上海市互联网准入证书" target="_blank" ref="noBlank" style="color:#484848">沪ICP备:16033615</a>
+						</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
