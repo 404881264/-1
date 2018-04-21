@@ -560,40 +560,40 @@ define(["jquery", "jquery-cookie"], function($){
 		$(function(){
 			var _index = 0;
 			for(var i = 0; i < 2; i++){
-				$(".hotrank .inner .tab a").eq(i).hover(function(){
-					$(".hotrank .inner .tab a").removeClass("now");
+				$(".hotrank .inner .tab_1 a").eq(i).hover(function(){
+					$(".hotrank .inner .tab_1 a").removeClass("now");
 					$(this).addClass("now");
 					_index = $(this).index();
-					$(".hotrank .inner .tabc").css("display","none");
-					$(".hotrank .inner .tabc").eq(_index).css("display","block");
+					$(".hotrank .inner .tabc_1").css("display","none");
+					$(".hotrank .inner .tabc_1").eq(_index).css("display","block");
 				})
 				$(".hotrank .inner_1 .tab a").eq(i).hover(function(){
 					$(".hotrank .inner_1 .tab a").removeClass("now");
 					$(this).addClass("now");
 					_index = $(this).index();
-					$(".hotrank .inner_1 .tabc").css("display","none");
-					$(".hotrank .inner_1 .tabc").eq(_index).css("display","block");
+					$(".hotrank .inner_1 .tabc_2").css("display","none");
+					$(".hotrank .inner_1 .tabc_2").eq(_index).css("display","block");
 				})
 				$(".hotrank .inner_2 .tab a").eq(i).hover(function(){
 					$(".hotrank .inner_2 .tab a").removeClass("now");
 					$(this).addClass("now");
 					_index = $(this).index();
-					$(".hotrank .inner_2 .tabc").css("display","none");
-					$(".hotrank .inner_2 .tabc").eq(_index).css("display","block");
+					$(".hotrank .inner_2 .tabc_3").css("display","none");
+					$(".hotrank .inner_2 .tabc_3").eq(_index).css("display","block");
 				})
 				$(".hotrank .inner_3 .tab a").eq(i).hover(function(){
 					$(".hotrank .inner_3 .tab a").removeClass("now");
 					$(this).addClass("now");
 					_index = $(this).index();
-					$(".hotrank .inner_3 .tabc").css("display","none");
-					$(".hotrank .inner_3 .tabc").eq(_index).css("display","block");
+					$(".hotrank .inner_3 .tabc_4").css("display","none");
+					$(".hotrank .inner_3 .tabc_4").eq(_index).css("display","block");
 				})
 				$(".hotrank .inner_4 .tab a").eq(i).hover(function(){
 					$(".hotrank .inner_4 .tab a").removeClass("now");
 					$(this).addClass("now");
 					_index = $(this).index();
-					$(".hotrank .inner_4 .tabc").css("display","none");
-					$(".hotrank .inner_4 .tabc").eq(_index).css("display","block");
+					$(".hotrank .inner_4 .tabc_5").css("display","none");
+					$(".hotrank .inner_4 .tabc_5").eq(_index).css("display","block");
 				})
 			}
 		})
